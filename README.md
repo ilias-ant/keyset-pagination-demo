@@ -15,7 +15,7 @@ Then, open a bash shell inside the running db container with:
 docker compose exec -it db bash
 ```
 
-and run the following commands to perform a benchmark comparison between offset-based pagination and keyset pagination, 
+and run the following command to perform a benchmark comparison between offset-based pagination and keyset pagination, 
 with 10 million rows as a testbed and 100 iterations for the benchmarking:
 
 ```bash
