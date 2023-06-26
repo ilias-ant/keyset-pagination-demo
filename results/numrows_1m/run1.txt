@@ -1,5 +1,5 @@
 -----------------------------
-number of rows: 10000000
+number of rows: 1000000
 iterations: 100
 -----------------------------
 populating tables...
@@ -32,9 +32,22 @@ maximum number of tries: 1
 number of transactions per client: 100
 number of transactions actually processed: 100/100
 number of failed transactions: 0 (0.000%)
-latency average = 0.091 ms
-initial connection time = 3.310 ms
-tps = 11043.622308 (without initial connection time)
+latency average = 0.102 ms
+initial connection time = 3.223 ms
+tps = 9774.215619 (without initial connection time)
 running benchmark for offset case...
 pgbench (15.3 (Debian 15.3-1.pgdg120+1))
 starting vacuum...end.
+transaction type: /var/lib/postgresql/scripts/pg_bench_offset.sql
+scaling factor: 1
+query mode: simple
+number of clients: 1
+number of threads: 1
+maximum number of tries: 1
+number of transactions per client: 100
+number of transactions actually processed: 100/100
+number of failed transactions: 0 (0.000%)
+latency average = 0.104 ms
+initial connection time = 3.337 ms
+tps = 9623.712828 (without initial connection time)
+experiment completed.

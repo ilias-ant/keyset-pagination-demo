@@ -27,3 +27,12 @@ sh /var/lib/postgresql/scripts/run.sh \
 ```
 
 Feel free to change `-n` and `-i` values to your liking.
+
+# Notes
+
+- `db/init.sql` has been created by prompting [chatGPT](https://en.wikipedia.org/wiki/ChatGPT) (out of boredom), 
+so `populate_tables` function may not be optimal.
+- [pgbench](https://www.postgresql.org/docs/current/pgbench.html), a simple program for running benchmark tests on 
+PostgreSQL, is used for the benchmarking.
+- `results/` contain the original benchmarking experiments.
+
