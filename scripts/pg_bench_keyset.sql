@@ -1,0 +1,5 @@
+SELECT *
+FROM transactions
+WHERE id > 500000
+ORDER BY id DESC
+LIMIT 50;

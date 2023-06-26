@@ -1,0 +1,4 @@
+SELECT *
+FROM transactions
+ORDER BY id
+LIMIT 50 OFFSET 500000;
