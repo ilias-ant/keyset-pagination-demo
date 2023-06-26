@@ -1,0 +1,40 @@
+-----------------------------
+number of rows: 10000000
+iterations: 100
+-----------------------------
+populating tables...
+ populate_tables
+-----------------
+
+(1 row)
+
+setting up pgbench...
+dropping old tables...
+NOTICE:  table "pgbench_accounts" does not exist, skipping
+NOTICE:  table "pgbench_branches" does not exist, skipping
+NOTICE:  table "pgbench_history" does not exist, skipping
+NOTICE:  table "pgbench_tellers" does not exist, skipping
+creating tables...
+generating data (client-side)...
+100000 of 100000 tuples (100%) done (elapsed 0.05 s, remaining 0.00 s)
+vacuuming...
+creating primary keys...
+done in 0.11 s (drop tables 0.00 s, create tables 0.00 s, client-side generate 0.06 s, vacuum 0.02 s, primary keys 0.03 s).
+running benchmark for keyset case...
+pgbench (15.3 (Debian 15.3-1.pgdg120+1))
+starting vacuum...end.
+transaction type: /var/lib/postgresql/scripts/pg_bench_keyset.sql
+scaling factor: 1
+query mode: simple
+number of clients: 1
+number of threads: 1
+maximum number of tries: 1
+number of transactions per client: 100
+number of transactions actually processed: 100/100
+number of failed transactions: 0 (0.000%)
+latency average = 0.091 ms
+initial connection time = 3.310 ms
+tps = 11043.622308 (without initial connection time)
+running benchmark for offset case...
+pgbench (15.3 (Debian 15.3-1.pgdg120+1))
+starting vacuum...end.
